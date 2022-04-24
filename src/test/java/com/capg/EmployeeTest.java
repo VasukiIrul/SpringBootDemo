@@ -31,7 +31,7 @@ public class EmployeeTest {
 		when(repository.findAll()).thenReturn(Stream.of(new Employee(123, "vasu", "vasuki.tce@gmail.com", "Chennai"),
 				new Employee(34, "Jack", "Shiva.tce@gmail.com", "pune")).collect(Collectors.toList()));
 
-		assertEquals(3, service.getAllEmployee().size());
+		assertEquals(2, service.getAllEmployee().size());
 	}
 
 	// fetchEmployeeByCity
